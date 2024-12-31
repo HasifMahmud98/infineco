@@ -851,3 +851,40 @@ CSS TABLE OF CONTENTS
 	new WOW().init();
 	// WOW Animatin area start here ***
 })(jQuery);
+
+var galleryCarousel = new Swiper('.gallery-carousel', {
+    slidesPerView: 5, // Default for large screens
+    spaceBetween: 20, // Space between images
+    loop: true, // Enable infinite scrolling
+    autoplay: {
+        delay: 3000, // Auto-scroll every 3 seconds
+        disableOnInteraction: false, // Keep auto-scroll active after interaction
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    breakpoints: {
+        // Adjust slides per view for different screen sizes
+        320: { slidesPerView: 1 }, // Mobile phones
+        640: { slidesPerView: 2 }, // Small tablets
+        768: { slidesPerView: 3 }, // Large tablets
+        1024: { slidesPerView: 4 }, // Small desktops
+        1200: { slidesPerView: 5 }, // Large desktops
+    },
+});
+
+// Magnific Popup initialization
+$('.gallery-popup').magnificPopup({
+    type: 'image',
+    gallery: {
+        enabled: true, // Enable gallery mode
+    },
+});
+
+
+
