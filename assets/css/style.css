@@ -34,11 +34,11 @@ CSS TABLE OF CONTENTS
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap");
 :root {
   --inter: "Inter", sans-serif;
-  --primary-color: #4baf47;
-  --secondary-color: #0e0e0e;
+  --primary-color: #00271c;
+  --secondary-color: #c2ea8a;
   --sub-bg: #f5f5f5;
-  --heading-color: #0e0e0e;
-  --paragraph: #303030;
+  --heading-color: #3E7B27;
+  --paragraph: #1c1c1c;
   --span: #888888;
   --border: #d9d9d9;
   --white: #ffffff;
@@ -2027,6 +2027,7 @@ input {
 }
 .header-wrapper .logo-menu img {
   max-width: 100%;
+  width: 6rem;
 }
 .header-wrapper .main-menu {
   position: relative;
